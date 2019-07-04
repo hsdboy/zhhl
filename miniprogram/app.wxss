@@ -1,0 +1,16 @@
+/**app.wxss**/
+.container {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(2, 32, 60);
+  float: left;
+  margin: 0;
+  /* overflow: auto; */
+} 
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}

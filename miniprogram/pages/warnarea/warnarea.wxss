@@ -1,0 +1,54 @@
+.title {
+  height: 50rpx;
+  color: rgb(53, 53, 53);
+  text-align: center;
+  margin-top: 200rpx;
+}
+
+.input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: rgb(48, 48, 48);
+  margin: 20rpx auto;
+}
+
+.input>input {
+  width: 200rpx;
+  text-align: center;
+  display: block;
+  border-bottom: 1rpx solid #000;
+}
+
+.containerd {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(rgb(255, 255, 255), rgba(197, 225, 245, 0.863));
+  float: left;
+  margin: 0;
+  /* overflow: auto; */
+}
+
+.titlen {
+  height: 50rpx;
+  color: white;
+  text-align: center;
+  margin-top: 200rpx;
+}
+
+.inputn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin: 20rpx auto;
+}
+
+.inputn input {
+  width: 200rpx;
+  text-align: center;
+  display: block;
+  border-bottom: 1rpx solid #000;
+}

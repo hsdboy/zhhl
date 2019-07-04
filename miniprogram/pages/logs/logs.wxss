@@ -1,0 +1,24 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+  overflow: auto;
+}
+.log-itemn {
+  margin: 10rpx;
+  color: white;
+}
+.log-item {
+  margin: 10rpx;
+  color: rgb(46, 46, 46);
+}
+.containerd {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(rgb(255, 255, 255), rgba(197, 225, 245, 0.863));
+  float: left;
+  margin: 0;
+  /* overflow: auto; */
+} 

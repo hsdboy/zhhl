@@ -1,0 +1,70 @@
+/* miniprogram/pages/addguest/addguest.wxss */
+.body{
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgb(255, 255, 255), rgba(197, 225, 245, 0.863));
+  font-size:30rpx; 
+}
+.bodyn{
+  width: 100vw;
+  height: 100vh;
+  background: rgb(2, 32, 60);
+  font-size:30rpx; 
+  color:white
+}
+.body>view{
+    padding: 15rpx;
+}
+.bodyn>view{
+    padding: 15rpx;
+}
+.title{
+  height: 60rpx;
+}
+.content{
+  background: rgba(255, 255, 255, 0)
+}
+.contentn{
+  background: rgb(6, 59, 101);
+  color: white
+}
+.content>view{
+  height: 80rpx;
+  display: flex;
+  line-height: 50rpx
+}
+.content>view>view{
+  width: 25%;
+}
+.contentn>view{
+  height: 80rpx;
+  display: flex;
+  line-height: 50rpx
+}
+.contentn>view>view{
+  width: 25%;
+}
+.right{
+  width: 95%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #6ab3f7;
+  border-radius:0;
+  color: white;
+  font-size: 35rpx;
+  margin-top: 20rpx;
+}
+.rightn{
+  width: 95%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: rgb(18, 70, 118);
+  border-radius:0;
+  color: white;
+  font-size: 35rpx;
+  margin-top: 20rpx;
+}
+input{
+  width: 75%;
+
+}

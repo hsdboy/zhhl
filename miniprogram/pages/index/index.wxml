@@ -1,0 +1,52 @@
+<!--index.wxml-->
+
+
+  <view class="{{class.container}}">
+    <view class="useract">
+      <view bindtap='abnormal' style="background:{{abnormal}}">
+        异常信息
+      </view>
+      <view class="userinfo">
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </view>
+      <view bindtap='history'>
+        历史数据
+      </view>
+    </view>
+    <view class="{{class.user}}">
+      <view class="{{class.userhb}}">
+        <view class="{{class.titlehb}}">
+          <view>
+            <icon class="iconfont icon-xinlv"></icon>
+          </view>
+          心率
+          <view>{{datanow.hb?datanow.hb+"次/分":"无数据"}}</view>
+        </view>
+        <ec-canvas class="mychart-dom-line" canvas-id="mychart-line" ec="{{hb}}"></ec-canvas>
+      </view>
+      <view class="{{class.userhb}}">
+
+        <view class="{{class.titlehb}}">
+          <view>
+            <icon class="iconfont icon-2"></icon>
+          </view>呼吸
+          <view>{{datanow.br?datanow.br+"次/分":"无数据"}}</view>
+        </view>
+
+        <ec-canvas class="mychart-dom-line" canvas-id="mychart-line" ec="{{br}}"></ec-canvas>
+      </view>
+      <view class="{{class.usersm}}">
+
+        <ec-canvas class="mychart-dom-line" canvas-id="mychart-line" ec="{{sleep}}"></ec-canvas>
+      </view>
+      <view class="{{class.usersm}}">
+
+        <ec-canvas class="mychart-dom-line" canvas-id="mychart-line" ec="{{mov}}"></ec-canvas>
+      </view>
+      <view class="{{class.point}}">
+          离床=0  在床=1   体动=2  呼叫=3
+      </view>
+      
+    </view>
+  </view>

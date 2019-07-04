@@ -1,0 +1,82 @@
+@import "../iconfont.wxss";
+
+.bodyn {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(6, 59, 101);
+}
+
+.jilun {
+  background: rgb(2, 32, 60);
+  height: 80rpx;
+  color: #94cef5;
+  line-height: 80rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+.jiln {
+  color: white;
+  border-bottom: 1rpx solid rgb(155, 192, 226);
+}
+
+.contentn>view {
+  background: rgb(6, 59, 101);
+  align-items: center;
+  border: 1px solid  rgb(2, 32, 60);
+  color: white;
+}
+
+.contentn>view>view {
+  padding: 20rpx 20rpx;
+  width: 100%;
+  font-size: 12px;
+  color: #e2ebf1;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  box-sizing: border-box;
+}
+
+.body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgb(255, 255, 255), rgba(197, 225, 245, 0.863));
+  overflow: auto
+}
+
+.jilu {
+  background: rgb(255, 255, 255);
+  height: 80rpx;
+  color: #63d2f3;
+  line-height: 80rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+.jil {
+  color: rgb(176, 207, 243);
+  border-bottom: 1rpx solid rgb(155, 192, 226);
+}
+
+.content>view {
+  background: rgba(255, 255, 255, 0);
+  align-items: center;
+  border: 1px solid #cde5f5;
+  color: rgb(0, 0, 0);
+}
+
+.content>view>view {
+  padding: 20rpx 20rpx;
+  width: 100%;
+  font-size: 12px;
+  color: #2c2c2c;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  box-sizing: border-box;
+}
+
+icon {
+  font-size: 12px;
+}

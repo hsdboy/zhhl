@@ -1,0 +1,23 @@
+<form bindsubmit='addfamily'>
+  <view class="{{class.body}}">
+    <view class="title">
+      <view> 基本信息</view>
+    </view>
+    <view class="{{class.content}}">
+     <input placeholder='自动分配' name="_id" value="{{datas._id}}" hidden></input>
+      <view>
+        <view>监护人姓名:</view>
+        <input placeholder='必填，客户姓名' name="name" value="{{datas.name}}"></input>
+      </view>
+      <view>
+        <view>联系电话:</view>
+        <input placeholder='联系电话' name="phone" value="{{datas.phone}}" />
+      </view>
+      <view>
+        <view> 联系地址:</view>
+        <input placeholder='联系地址' name="address" value="{{datas.address}}" />
+      </view>
+    </view>
+    <button class="{{class.right}}" form-type='submit'>{{button}}</button>
+  </view>
+</form>

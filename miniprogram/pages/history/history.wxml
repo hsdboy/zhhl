@@ -1,0 +1,47 @@
+<view class="{{class.body}}">
+  <view class="{{class.jilu}}">
+    <view class="{{ji0}}" bindtap='week'>近一周记录 </view>
+    <view class="{{ji1}}" bindtap='ten'>十天记录 </view>
+    <view class="{{ji2}}" bindtap='month'>近一个月记录 </view>
+  </view>
+  <view class="{{class.content}}">
+    <view class="item" wx:for="{{data}}" wx:for-item="item" wx:key="">
+
+      时间：{{item.date}}
+      <view>
+        <view>
+          <!-- <icon class="iconfont icon-xinlv"></icon> -->
+          <text> 心率：{{item.data.avgHb}}</text>
+        </view>
+        <view>
+  
+          <text> 呼吸：{{item.data.avgBr}}</text>
+        </view>
+        <view>
+
+          <text> 离床：{{item.data.leave}}</text>
+        </view>
+        <view>
+    
+          <text> 最大心率：{{item.data.maxHb}}</text>
+        </view>
+        <view>
+   
+          <text> 最大呼吸次数：{{item.data.maxBr}}</text>
+        </view>
+        <view>
+   
+          <text> 最小心率：{{item.data.minHb}}</text>
+        </view>
+        <view>
+    
+          <text> 最小呼吸次数：{{item.data.minBr}}</text>
+        </view>
+        <view>
+       
+          <text> 体动次数：{{item.data.avgHb}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

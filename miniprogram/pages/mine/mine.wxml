@@ -1,0 +1,84 @@
+<view class="{{class.container}}">
+  <view class="{{class.view}}">
+    <view>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="{{class.userinfo}}">{{userInfo.nickName}}</text>
+    </view>
+    <view>
+      <text class="{{class.right}}">></text>
+    </view>
+
+  </view>
+  <view class="{{class.view}}  margin" bindtap='changsn'>
+    <view>
+      我的设备
+    </view>
+    <view>
+      <text>{{showsn}}  </text>
+      <text class="{{class.right}}">></text>
+    </view>
+  </view>
+  <view class="{{class.view}}" bindtap='warn'>
+    <view>
+      我的报警器
+    </view>
+    <view>
+      <text class="{{class.right}}">></text>
+    </view>
+  </view>
+  <view class="{{class.view}}  margin" bindtap='warnarea'>
+    <view>
+      报警范围设置
+    </view>
+    <view>
+      <text class="{{class.right}}">></text>
+    </view>
+  </view>
+  <view class="{{class.view}}" bindtap='count'>
+    <view>
+      数据统计
+    </view>
+    <view>
+      <text class="{{class.right}}">></text>
+    </view>
+  </view>
+  <view class="{{class.view}}" bindtap='addfamily'>
+    <view>
+      添加监护人
+    </view>
+    <view>
+      <text class="{{class.right}}">></text>
+    </view>
+  </view>
+  <view class="{{class.view}}" bindtap='family'>
+    <view>
+      监护人列表
+    </view>
+    <view>
+      <text class="{{class.right}}">></text>
+    </view>
+  </view>
+  <view class="{{class.view}}" bindtap='times'>
+    <view>
+      启动日志
+    </view>
+    <view>
+      <text class="{{class.right}}">></text>
+    </view>
+  </view>
+
+  <view class="{{class.view}} margin">
+    <view>
+      夜间模式
+    </view>
+
+    <view class="body-view">
+      <switch  bindchange="switch1Change" checked="{{checke}}" color="rgb(18, 70, 118)" />
+    </view>
+
+  </view>
+
+</view>
+<modal hidden="{{hiddenmodalput}}" title="设备号" confirm-text="确认" cancel-text="取消" bindcancel="cancelM" bindconfirm="confirmM">
+  <input bindinput='sn' type='text' placeholder="请输入新设备号..." auto-focus/>
+</modal>

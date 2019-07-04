@@ -1,0 +1,121 @@
+<view class="{{class.analysis}}">
+  <view class="{{class.equipment}}" bindtap='choose'>
+   <text> {{date}}\n{{sn}}</text>
+  </view>
+  <text class="{{class.title}}">
+    心率呼吸
+    </text>
+  <view class="{{class.data}}">
+    <view>
+      <view>
+        <icon class="iconfont icon-xinlv"></icon>
+      </view>
+      <view>
+        心率
+        <text>\n{{datas.avgBr?datas.avgBr:"--"}}次/分钟</text>
+      </view>
+
+    </view>
+    <view>
+      <view>
+        <icon class="iconfont icon-2"></icon>
+      </view>
+      <view>呼吸
+        <text>\n{{datas.avgHb?datas.avgHb:"--"}}次/分钟</text>
+      </view>
+
+    </view>
+
+  </view>
+  <text class="{{class.title}}">
+    体动离床
+    </text>
+  <view class="{{class.data}}">
+    <view>
+      <view>
+        <icon class="iconfont icon-tidong"></icon>
+      </view>
+      <view>体动
+        <text>\n{{datas.mov?datas.mov:"--"}}次</text>
+      </view>
+
+    </view>
+    <view>
+      <view>
+        <icon class="iconfont icon-shuimianjianceqitang"></icon>
+      </view>
+      <view>离床
+        <text>\n{{datas.leave?datas.leave:"--"}}次</text>
+      </view>
+    </view>
+
+
+  </view>
+
+  <text class="{{class.title}}">
+    睡眠分析
+    </text>
+  <view class="{{class.data}}">
+    <view>
+      <view class="fang gray">
+
+      </view>
+      <view>
+        清醒
+        <text>\n{{datas.avBr?datas.avgBr:"--"}}分钟</text>
+      </view>
+    </view>
+    <view>
+      <view class="fang into">
+
+      </view>
+      <view>入睡
+        <text>\n{{datas.avBr?datas.avgBr:"--"}}分钟</text>
+      </view>
+    </view>
+    <view>
+      <view class="fang low">
+
+      </view>
+      <view>浅睡
+        <text>\n{{datas.agBr?datas.avgBr:"--"}}分钟</text>
+      </view>
+    </view>
+    <view>
+      <view class="fang deep">
+
+      </view>
+      <view>深睡
+        <text>\n{{datas.avBr?datas.avgBr:"--"}}分钟</text>
+      </view>
+    </view>
+
+
+
+  </view>
+</view>
+<view wx:if="{{isShowDates}}" class="showDates">
+ <modal show="true" height='60%;width:100%' bindcancel="cancel" bindconfirm='confirm'>
+      <view class="time_text">{{year}}-{{month}}-{{day}}</view>
+      <view class="time_title">
+        <view class="time_title_text">年</view>
+        <view class="time_title_text">月</view>
+        <view class="time_title_text">日</view>
+      </view>
+    
+      <picker-view wx:if="{{years.length>0 && months.length>0 && days.length>0}}"  indicator-style="height: 50px;" class="view_picker" style="width: 100%;" value="{{value}}" bindchange="bindChange" >
+     <!--  <text>{{years}}</text>
+      <text>{{months}}</text>
+      <text>{{days}}</text> -->
+          <picker-view-column class="view_picker_column">
+            <view wx:for="{{years}}" class="view_picker_text" wx:key="{{index}}">{{item}}</view>
+          </picker-view-column>
+          <picker-view-column class="view_picker_column">
+            <view wx:for="{{months}}" class="view_picker_text" wx:key="{{index}}">{{item}}</view>
+          </picker-view-column>
+          <picker-view-column class="view_picker_column">
+            <view wx:for="{{days}}"  class="view_picker_text" wx:key="{{index}}">{{item}}</view>
+          </picker-view-column>
+      </picker-view>
+  </modal>
+</view>

@@ -1,0 +1,30 @@
+/* pages/warn/warn.wxss */
+.checkbox{
+  display: block;
+  height: 100rpx;
+  color:rgb(29, 29, 29);
+  padding: 0 30rpx;
+}
+.checkbox checkbox{
+  float: right
+}
+
+.containerd {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(rgb(255, 255, 255), rgba(197, 225, 245, 0.863));
+  float: left;
+  margin: 0;
+  /* overflow: auto; */
+} 
+.checkboxn{
+  display: block;
+  height: 100rpx;
+  color:white;
+  padding: 0 30rpx;
+}
+.checkboxn checkbox{
+  float: right
+}

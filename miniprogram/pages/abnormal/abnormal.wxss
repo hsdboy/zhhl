@@ -1,0 +1,67 @@
+/* pages/abnormal/abnormal.wxss */
+@import "../iconfont.wxss";
+.containerd {
+  width: 100vw;
+  /* height: 100vh; */
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(rgb(255, 255, 255), rgba(197, 225, 245, 0.863));
+  float: left;
+  margin: 0;
+  /* overflow: auto; */
+} 
+.item {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50rpx;
+  background: rgb(2, 32, 60);
+}
+.itemn {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50rpx;
+  background: rgba(255, 255, 255, 0);
+}
+.item>view:nth-of-type(1) {
+  width: 30%;
+  text-align: center;
+}
+
+.item>view:nth-of-type(1) .iconfont {
+  color: white;
+  font-size: 30px;
+}
+
+.item>view:nth-of-type(2) {
+  width: 70%;
+  color: white;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.item>view:nth-of-type(2)>view:nth-of-type(1) {
+  font-size: 16px;
+}
+.itemn>view:nth-of-type(2)>view:nth-of-type(1) {
+  font-size: 16px;
+}
+.itemn>view:nth-of-type(1) {
+  width: 30%;
+  text-align: center;
+}
+
+.itemn>view:nth-of-type(1) .iconfont {
+  color: rgb(59, 56, 56);
+  font-size: 30px;
+}
+
+.itemn>view:nth-of-type(2) {
+  width: 70%;
+  color:rgb(56, 59, 58);
+  font-size: 12px;
+  line-height: 25px;
+}

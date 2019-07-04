@@ -1,0 +1,12 @@
+<view class="{{class.container}}" >
+    <view class="{{class.item}}" wx:for="{{data}}" wx:for-item="item" wx:key="">
+      <view>
+        <icon class="iconfont icon-zuoyebaojing"></icon>
+      </view>
+      <view>
+        <view>{{item.type}}</view>
+        <view>发生时间   {{item.happendate}}</view>
+        <view>处理时间  {{item.handledate}}</view>
+      </view>
+    </view>
+</view>

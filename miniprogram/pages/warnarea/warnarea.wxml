@@ -1,0 +1,16 @@
+<view class="{{class.container}}">
+  <view class="{{class.title}}">
+    心率范围：
+  </view>
+  <view class="{{class.input}}">
+    <input bindinput='minhb' value="{{minhb}}"></input>--
+    <input bindinput='maxhb' value="{{maxhb}}"></input>
+  </view>
+  <view class="{{class.title}}">
+    呼吸范围：
+  </view>
+  <view class="{{class.input}}">
+    <input bindinput='minbr' value="{{minbr}}"></input>--
+    <input bindinput='maxbr' value="{{maxbr}}"></input>
+  </view>
+</view>

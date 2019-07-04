@@ -1,0 +1,122 @@
+/* pages/customer/customer.wxss */
+.body{
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgb(255, 255, 255), rgba(197, 225, 245, 0.863));
+}
+.title{
+  width: 100%;
+  background: rgba(255, 255, 255, 0);
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+}
+.title input{
+  width: 80%;
+  height: 70rpx;
+  border-radius:50rpx; 
+  background: #eeeeee00;
+  font-size:30rpx; 
+  padding-left:30rpx; 
+}
+.title button{
+  width: 130rpx;
+  height: 70rpx;
+  border-radius:35rpx; 
+  background: #009900;
+  color:white;
+  font-size: 30rpx;
+}
+.item{
+  height: 120rpx;
+  font-size: 30rpx;
+  line-height: 50rpx;
+  padding: 50rpx auto;
+  border: 1rpx solid #eeeeee;
+  display:flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0);
+}
+.item .img{
+  width: 100rpx;
+  height: 100rpx;
+  background: grey;
+  border-radius: 50%;
+  line-height: 100rpx;
+  text-align: center;
+  color:white;
+  margin-right: 10rpx
+}
+.item .name{
+  font-size: 40rpx;
+  font-weight:600 
+}
+.item .phone{
+  color:grey 
+}
+.item .money{
+  width: 50%;
+  text-align: right;
+  float:right
+}
+.bodyn{
+  width: 100vw;
+  height: 100vh;
+background: rgb(2, 32, 60);
+}
+.titlen{
+  width: 100%;
+  background: rgb(6, 59, 101);
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+}
+.titlen input{
+  width: 80%;
+  height: 70rpx;
+  border-radius:50rpx; 
+  background: #eeeeee;
+  font-size:30rpx; 
+  padding-left:30rpx; 
+}
+.titlen button{
+  width: 130rpx;
+  height: 70rpx;
+  border-radius:35rpx; 
+  background: #009900;
+  color:white;
+  font-size: 30rpx;
+}
+.itemn{
+  height: 120rpx;
+  font-size: 30rpx;
+  line-height: 50rpx;
+  padding: 50rpx auto;
+  border: 1rpx solid  rgb(2, 32, 60);
+  display:flex;
+  align-items: center;
+  background: rgb(6, 59, 101);
+}
+.itemn .img{
+  width: 100rpx;
+  height: 100rpx;
+  background: grey;
+  border-radius: 50%;
+  line-height: 100rpx;
+  text-align: center;
+  color:white;
+  margin-right: 10rpx
+}
+.itemn .name{
+  font-size: 40rpx;
+  font-weight:600;
+  color:white
+}
+.itemn .phone{
+  color:white 
+}
+.itemn .money{
+  width: 50%;
+  text-align: right;
+  float:right
+}

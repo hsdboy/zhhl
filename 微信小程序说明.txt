@@ -1,0 +1,86 @@
+#miniprogram:
+
+ec-canvas:引入的echarts包
+
+utils：
+
+--mqtt.js：引入的mqtt
+--util.js:  --连接后台的端口
+--app.json: 全局配置文件，菜单栏，导航栏，底部标签页
+--app.wxss:全局样式
+
+
+page:
+--***.json:单个页面配置文件
+
+abnormal：
+--abnormal.js:
+ onReachBottom()   //滚轮滚至底部触发事件
+ getdata()   	   //发送请求拿到异常数据
+
+--addfamily.js:
+ addfamily()     //添加/修改监护人请求
+ 
+--analysis.js:
+ choose()       //点击选择日期方法
+ bindChange()    //选择日期时进行日期切换
+ confirm()     //确认选择该日期
+ cancel()      //取消选择  
+
+--family.js
+    wx.login({     //取得当前微信用户的openid以此来获取后台对应的数据，成功之后再发送请求
+      success: function(res) {。。。。。}
+	})
+ get()    //获取选择对象id的方法
+ choose()  //点击之后弹出选择框
+ add()   //跳到新增监护人页面
+ search()   //搜索框模糊搜索
+
+--history.js
+ getDate()   //日期格式转换
+ week(),ten(),month()   //标签样式改变
+ getdata()  //获取对应天数的数据
+
+--index.js
+ Uint8ArrayToString()  //转换数据格式
+	15-42行+48行    //mqtt获取实时信息
+  hb(),br(),sleep(),mov()   //图表的渲染
+ onload()   //获取心率呼吸范围，获取报警方式，mqtt达到前者触发后者
+ abnomal()  //跳到异常
+ history()  //跳到历史
+
+--login.js
+ bindGetUserInfo()  //弹出授权框，可选允许或取消
+
+--logs.js  //启动日志
+--mine.js  //我的
+--warn.js  //警报器
+ checkboxChange（） //选中改警报
+--warnarea.js //警报范围    
+ minhb(),minbr(),maxhb(),maxbr()  //设置最小最大心率呼吸存储在storage
+
+
+其他：
+onload()  //页面加载触发
+onshow()  //页面显示触发
+ tab()，tabn()  //改变顶部底部样式的方法
+  const db = wx.cloud.database() //云开发请求方式
+  db.collection('family').doc(id).update({
+  data: data,
+        success: res => {
+          wx.showToast({
+            title: '修改记录成功',
+          })
+	}）
+
+用到的api：
+wx.navigateTo  //跳转
+ wx.makePhoneCall  //打电话的
+  wx.setStorageSync  //存放在storage
+ wx.getStorage   //从storage取出
+ wx.showToast  //消息提示框
+ wx.setTabBarStyle  //动态改变tabbar样式
+  wx.getUserInfo   //获取用户信息
+
+
+

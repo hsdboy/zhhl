@@ -1,0 +1,161 @@
+@import "../iconfont.wxss";
+.analysisn {
+  height: 100vh;
+  background: linear-gradient(rgb(2, 32, 60), rgba(2, 48, 80, 0.863));
+  overflow: auto;
+  padding-bottom:30rpx; 
+}
+
+.equipmentn {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 24rpx auto 0;
+  border-radius: 50%;
+  font-size: 12px;
+  text-align: center;
+  color: white;
+  background: -webkit-gradient(radial, 100 100, 0, 100 100, 100, from(rgba(71, 174, 226, 0.418)), to(rgb(41, 166, 230)));
+  box-shadow: 0 0 0 12rpx rgba(22, 105, 146, 0.966), 0 0 0 24rpx rgba(12, 76, 114);
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.datan {
+  width: 90%;
+  margin: 30rpx auto 0;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+.datan>view{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top:20rpx;
+  padding: 25rpx;
+  width: 48%;
+  height: 125rpx;
+  color: white;
+  flex-flow: wrap;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 13px;
+  background:rgb(0, 33, 60) 
+}
+.datan>view>view>icon{
+  font-size: 30px;
+}
+.datan>view>view>text{
+  font-size: 12px;
+}
+.titlen{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color:white;
+}
+.fang{
+  width:50rpx;
+  height: 50rpx;
+
+}
+.gray{
+    background: rgb(177, 174, 174)
+}
+.into{
+    background: rgb(235, 169, 126)
+}
+.low{
+    background: rgb(236, 171, 30)
+}
+.deep{
+    background: rgb(108, 228, 114)
+}
+.showDates{
+  position: fixed;
+  width: 80%;
+  height: 80%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 36rpx;
+  z-index: 9999;
+}
+.time_title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.view_picker{
+  height: 300rpx;
+}
+.view_picker_textn{
+  color: #000;
+  font-size: 40rpx;
+  text-align: center;
+  line-height: 100rpx;
+}
+.time_text{
+  text-align: center;
+}
+
+
+.analysis {
+  height: 100vh;
+  background: linear-gradient(rgb(255, 255, 255), rgba(197, 225, 245, 0.863));
+  overflow: auto;
+  padding-bottom:30rpx; 
+}
+
+.equipment {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 24rpx auto 0;
+  border-radius: 50%;
+  font-size: 12px;
+  text-align: center;
+  color: white;
+  background: -webkit-gradient(radial, 100 100, 0, 100 100, 100, from(rgba(71, 174, 226, 0.418)), to(rgb(41, 166, 230)));
+  box-shadow: 0 0 0 12rpx rgba(41, 167, 230, 0.39), 0 0 0 24rpx rgba(41, 167, 230, 0.123);
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.data {
+  width: 90%;
+  margin: 30rpx auto 0;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+.data>view{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top:20rpx;
+  padding: 25rpx;
+  width: 48%;
+  height: 125rpx;
+  color: rgb(10, 10, 10);
+  flex-flow: wrap;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 13px;
+  background:rgb(174, 218, 253) 
+}
+.data>view>view>icon{
+  font-size: 30px;
+}
+.data>view>view>text{
+  font-size: 12px;
+}
+.title{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color:rgb(22, 21, 21);
+}

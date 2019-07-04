@@ -1,0 +1,80 @@
+.viewn {
+  padding: 25rpx;
+  border-radius: 5rpx;
+  width: 95%;
+  margin: 0 auto;
+  background: rgb(0, 36, 70);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  color: white;
+  font-size: 13px;
+}
+
+viewn .margin {
+  margin-top: 20rpx;
+}
+
+.viewn view {
+  display: flex;
+}
+
+.userinfo-avatar {
+  display: block;
+  width: 130rpx;
+  height: 130rpx;
+  margin: 10rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nicknamen {
+  color: #fff;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 12px;
+}
+
+.rightn {
+  color: rgb(248, 248, 248);
+}
+.view {
+  padding: 25rpx;
+  border-radius: 5rpx;
+  width: 95%;
+  margin: 0 auto;
+  background: rgba(197, 225, 245, 0.863);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  color: rgb(49, 49, 49);
+  font-size: 13px;
+}
+
+view .margin {
+  margin-top: 20rpx;
+}
+
+.view view {
+  display: flex;
+}
+.userinfo-nickname {
+  color: rgb(48, 48, 48);
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 12px;
+}
+.right {
+  color: rgb(25, 97, 155);
+}
+.containerd {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(rgb(255, 255, 255), rgba(197, 225, 245, 0.863));
+  float: left;
+  margin: 0;
+  /* overflow: auto; */
+} 
